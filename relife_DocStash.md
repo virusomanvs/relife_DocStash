@@ -29,6 +29,16 @@
       "stashVariousIDList": ["Stash666"]
     }
   ],
+  "m_BlockedPositions": [
+        {
+            "Position": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "Radius": 1.0
+        }
+    ],
   "warning0": "WARNING! DO NOT EDIT BELLOW!",
   "allItemsList": [],
   "allStashVariation": []
@@ -39,9 +49,17 @@
 | `attemptFailedSpawn` | `int`    | Кол-во попыток при неудачном спавне схрона.    |
 | `mapsSizeList`       | `name, size` | Список карт и их размеров.                     |
 | `listOfDocs`         | `array`  | Список настроек документов.                    |
+| `m_BlockedPositions`         | `array`  | Список позиций где схрон не будет спавниться.                    |
 | `warning0`           | `string` | Системное предупреждение (не изменять).        |
 | `allItemsList`       | `array`  | Автогенерируемый список всех предметов. Не трогать!        |
 | `allStashVariation`  | `array`  | Автогенерируемый список всех вариаций схронов. Не трогать!|
+
+Параметры объекта m_BlockedPositions
+
+| Параметр                   | Тип            | Описание                                                      |
+| -------------------------- | -------------- | ------------------------------------------------------------- |
+| `Position`                | `vector  `       | Координаты точки.                                              |
+| `Radius`                | `float  `       | Радиус точки.                                              |
 
 Параметры объекта listOfDocs
 
